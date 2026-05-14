@@ -1,0 +1,32 @@
+# FrpMC Messages Configuration
+# For internationalization support
+
+# General messages
+prefix: '&8[&6FrpMC&8] '
+no-permission: '&cYou don''t have permission to use this command.'
+player-only: '&cThis command must be used in-game.'
+
+# Authentication messages
+login-success: '&aSuccessfully logged in to Mefrp!'
+login-failed: '&cLogin failed: &e{reason}'
+logout-success: '&aYou have been logged out from Mefrp API.'
+not-logged-in: '&cPlease login first using &e/mefrp login'
+logging-in: '&eLogging in to Mefrp API...'
+
+# Tunnel messages
+tunnel-created: '&aTunnel created successfully!'
+tunnel-deleted: '&aTunnel deleted successfully!'
+tunnel-started: '&aTunnel started successfully!'
+tunnel-stopped: '&aTunnel stopped successfully!'
+tunnel-failed: '&cFailed to {action} tunnel: &e{reason}'
+tunnel-list-header: '&6=== Your Tunnels ==='
+
+# Status messages
+status-connected: '&aStatus: Connected'
+status-disconnected: '&cStatus: Not logged in'
+status-token-present: '&eStatus: Token present but not verified'
+reconnecting: '&e[FrpMC] Attempting to reconnect to Mefrp API...'
+
+# Help messages
+help-header: '&6=== Mefrp FRP Plugin Help ==='
+help-format: '&e{command} &7- &f{description}'

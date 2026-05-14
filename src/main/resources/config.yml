@@ -1,0 +1,28 @@
+# FrpMC Configuration
+# Mefrp FRP management plugin for Minecraft Paper 1.21.8
+
+# API Settings
+api:
+  base-url: https://api.mefrp.com/api
+  user-agent: FrpMC/1.0.0 MinecraftPlugin
+  timeout: 10000
+
+# Auto-reconnect settings
+auto-reconnect:
+  enabled: true
+  interval: 30
+  max-retries: 5
+
+# Status monitoring
+status:
+  update-interval: 60
+  show-in-chat: true
+
+# Captcha settings (人机验证设置)
+captcha:
+  # 你的客户端代号 - 从 https://www.mefrp.com/3rdparty/captcha?client=YOUR_CODE 获取验证码
+  client-code: FrpMC
+  enabled: true
+
+# Debug mode
+debug: false

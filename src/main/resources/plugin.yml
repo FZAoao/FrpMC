@@ -1,0 +1,36 @@
+name: FrpMC
+version: '${project.version}'
+main: com.mefrp.frpmc.Main
+api-version: '1.21'
+author: FZAoao
+description: FZAoao FRP management plugin for Minecraft Paper 1.21.8
+website: https://mefrp.com
+
+commands:
+  mefrp:
+    description: Mefrp FRP management commands
+    usage: /<command> <subcommand>
+    aliases: [frp, mefrpc]
+  mefrp-login:
+    description: Login to Mefrp API
+    usage: /<command> <username> <password>
+  mefrp-tunnel:
+    description: Manage FRP tunnels
+    usage: /<command> <action> [args]
+  mefrp-status:
+    description: Show Mefrp connection status
+    usage: /<command>
+
+permissions:
+  frpmc.*:
+    description: All FrpMC permissions
+    default: op
+    children:
+      frpmc.command: true
+      frpmc.admin: true
+  frpmc.command:
+    description: Basic FrpMC command access
+    default: true
+  frpmc.admin:
+    description: Admin access for FrpMC
+    default: op
